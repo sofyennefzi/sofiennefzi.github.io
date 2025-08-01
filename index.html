@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofyen Nefzi - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+<nav id="desktop-nav">
+  <div class="logo">Sofyen Nefzi</div>
+  <div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<nav id="hamburger-nav">
+  <div class="logo">Sofyen Nefzi</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+</nav>
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="profile_picture.jpeg" alt="Sofyen Nefzi profile picture" />
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Sofyen Nefzi</h1>
+    <p class="section__text__p2">Full-Stack Developer | Spring Boot & Angular Specialist</p>
+    <div class="btn-container">
+      <button class="btn btn-color-2" onclick="window.open('mon cv.pdf')">
+        Download CV
+      </button>
+      <button class="btn btn-color-1" onclick="scrollToContact()">
+        Contact Info
+      </button>
+    </div>
+    <div id="socials-container">
+      <img
+              src="linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/sofien-nefzi-223651267/'"
+      />
+      <img
+              src="github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/sofyennefzi'"
+      />
+    </div>
+  </div>
+</section>
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img src="pp3.png" alt="Profile picture" class="about-pic" />
+    </div>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="experience.png" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>6 months <br />Full-Stack Development at CNSS</p>  <!-- Updated experience duration -->
+        </div>
+        <div class="details-container">
+          <img src="education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>1- Bac Informatique<br />2- Licence en Business Computing (ESEN)</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          I am a creative developer who enjoys pushing boundaries and finding innovative solutions.
+          With strong communication skills and a collaborative nature, I thrive in team environments.
+          My critical thinking helps me analyze situations effectively, and I consistently meet deadlines
+          to deliver quality results on time.
+        </p>
+      </div>
+    </div>
+  </div>
+  <img
+          src="arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="scrollToSection('experience')"/>
+</section>
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <!-- Backend Development -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Backend Development</h2>
+        <div class="article-container">
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Spring Boot (Java)</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Oracle Database</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>PostgreSQL</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>REST APIs</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Spring Security & JWT</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 80%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>JavaMail (Email Recovery)</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 75%"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Frontend Development -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Frontend Development</h2>
+        <div class="article-container">
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Angular (TypeScript)</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 75%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>HTML/CSS</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 85%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>JavaScript</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 75%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Bootstrap</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 60%"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other Skills (From CV) -->
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Other Skills</h2>
+        <div class="article-container">
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Python</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 65%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>PHP</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 75%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Linux</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 50%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Git & GitHub</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width:65%"></div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Docker</h3>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 65%"></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Certifications (From CV) -->
+      <div class="details-container">
+        <h2 class="experience-sub-title">Certifications</h2>
+        <div class="article-container">
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Google Cybersecurity</h3>
+              <p>Professional Certificate</p>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Microsoft Azure</h3>
+              <p>Cloud Services</p>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Spring Boot (Coursera)</h3>
+              <p>IoC, DI, MVC & REST</p>
+            </div>
+          </article>
+          <article>
+            <img src="checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3> English (B2)</h3>
+              <p>EF SET</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('projects')" />
+</section>
+
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="projects-grid-container">
+    <!-- Row 1 -->
+    <div class="projects-row">
+      <!-- Project 1 -->
+      <div class="details-container color-container project-card" data-category="web">
+        <div class="article-container">
+          <img src="joker.jpg" alt="ESEN Joker Club Website" class="project-img" />
+          <div class="project-overlay">
+            <h3>ESEN Joker Club</h3>
+            <p>University club promotional website</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="experience-sub-title project-title">🃏 ESEN Joker Club Website</h3>
+          <p class="project-description">
+            Designed and developed the official website for our university's Joker Club.
+            Features include event calendars, member profiles, and photo galleries.
+            Implemented responsive design for all devices and optimized loading times.
+          </p>
+          <div class="tech-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='http://jokeresen.000.pe/'">
+              Live Demo
+            </button>
+            <button class="btn btn-color-2 project-btn">
+              GitHub
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="details-container color-container project-card" data-category="web">
+        <div class="article-container">
+          <img src="hotel.jpg" alt="Hotel Website" class="project-img" />
+          <div class="project-overlay">
+            <h3>Hotel Booking</h3>
+            <p>Complete reservation system</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="experience-sub-title project-title">🏨 Hotel Booking System</h3>
+          <p class="project-description">
+            A comprehensive hotel management system with room booking functionality,
+            admin dashboard, and payment integration. Developed as my final year project
+            with secure user authentication and database management.
+          </p>
+          <div class="tech-tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>jQuery</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="details-container color-container project-card" data-category="web">
+        <div class="article-container">
+          <img src="resto.jpg" alt="Restaurant Website" class="project-img" />
+          <div class="project-overlay">
+            <h3>Gourmet Restaurant</h3>
+            <p>Elegant dining website</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="experience-sub-title project-title">🍽️ Gourmet Restaurant</h3>
+          <p class="project-description">
+            Modern restaurant website with online reservation system, interactive menu,
+            and food gallery. Focused on creating an elegant UI with smooth animations
+            and intuitive navigation for the best user experience.
+          </p>
+          <div class="tech-tags">
+            <span>React</span>
+            <span>CSS Modules</span>
+            <span>Node.js</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End Row 1 -->
+
+    <!-- Row 2 -->
+    <div class="projects-row">
+      <!-- Project 4 -->
+      <div class="details-container color-container project-card" data-category="python">
+        <div class="article-container">
+          <img src="yt.jpg" alt="YouTube Downloader" class="project-img" />
+          <div class="project-overlay">
+            <h3>YouTube Downloader</h3>
+            <p>Video download application</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="experience-sub-title project-title">📥 YouTube Video Downloader</h3>
+          <p class="project-description">
+            Desktop application that downloads YouTube videos in multiple formats and
+            resolutions. Includes progress tracking, playlist support, and quality
+            selection options.
+          </p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Tkinter</span>
+            <span>Pytube</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="details-container color-container project-card" data-category="python">
+        <div class="article-container">
+          <img src="ping pong.jpg" alt="Ping Pong Game" class="project-img" />
+          <div class="project-overlay">
+            <h3>Ping Pong</h3>
+            <p>Classic arcade game</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="experience-sub-title project-title">🏓 Classic Ping Pong</h3>
+          <p class="project-description">
+            A retro-style ping pong game with score tracking, difficulty levels,
+            and multiplayer support. Built to understand game physics and real-time
+            user input handling.
+          </p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>Turtle</span>
+            <span>Game Dev</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="details-container color-container project-card" data-category="python">
+        <div class="article-container">
+          <img src="XO.jpg" alt="XO Game" class="project-img" />
+          <div class="project-overlay">
+            <h3>Tic Tac Toe</h3>
+            <p>AI-powered game</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="experience-sub-title project-title">❌⭕ AI Tic Tac Toe</h3>
+          <p class="project-description">
+            Classic Tic Tac Toe with adjustable AI difficulty. Features include
+            score history, player vs player mode, and responsive design that works
+            on both desktop and mobile devices.
+          </p>
+          <div class="tech-tags">
+            <span>JavaScript</span>
+            <span>Minimax Algorithm</span>
+            <span>Responsive Design</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End Row 2 -->
+  </div>
+</section>
+
+<!-- First Project: Full-Stack Web Application -->
+<section id="cnss-data-platform" class="featured-project">
+  <p class="section__text__p1">Explore In-Depth</p>
+  <h1 class="title">Featured Project: CNSS Data Management Platform</h1>
+  <div class="featured-project-container">
+    <div class="featured-text">
+      <h2>💼 Full-Stack Web Application - CNSS Tunisia (2025)</h2>
+      <p>
+        As part of my internship at the <strong>Caisse Nationale de Sécurité Sociale (CNSS)</strong> in Tunis (MED 5),
+        I developed a secure web-based application for internal data management and automation.
+      </p>
+      <p>
+        <strong>🔧 Backend:</strong> Spring Boot, REST APIs, Spring Security, JWT<br>
+        <strong>🎨 Frontend:</strong> Angular (TypeScript), HTML5, CSS3, Bootstrap<br>
+        <strong>⚙️ Core Feature:</strong> API Middleware to auto-extract and populate databases<br>
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">View Case Study</button>
+      </div>
+    </div>
+    <div class="featured-gallery">
+      <div class="gallery-item">
+        <img src="interface API.png" alt="API Input Interface" />
+        <p class="image-caption">API Integration Interface</p>
+      </div>
+      <div class="gallery-item">
+        <img src="data API.png" alt="Data Grid Output" />
+        <p class="image-caption">Data Visualization Dashboard</p>
+      </div>
+      <div class="gallery-item">
+        <img src="filtre.png" alt="Advanced Filtering Interface" />
+        <p class="image-caption">Advanced Data Filtering</p>
+      </div>
+      <div class="gallery-item">
+        <img src="17524bad-2a9f-4083-a5c7-7e647a49b0eb.jpeg" alt="Data Loading Interface" />
+        <p class="image-caption">Data Loading Panel</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Second Project: Admin CRUD System -->
+<section id="cnss-admin-crud" class="featured-project">
+  <p class="section__text__p1">Explore In-Depth</p>
+  <h1 class="title">Featured Project: CNSS Admin CRUD System</h1>
+  <div class="featured-project-container">
+    <div class="featured-text">
+      <h2>💼 Admin Management System - CNSS Tunisia (2025)</h2>
+      <p>
+        Developed a comprehensive admin dashboard with full CRUD functionality for user and data management.
+      </p>
+      <ul class="crud-features">
+        <li>Complete user management dashboard</li>
+        <li>Create/Read/Update/Delete operations</li>
+        <li>Advanced filtering and sorting</li>
+        <li>Bulk data import/export</li>
+        <li>Activity audit logs</li>
+      </ul>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">View Screenshots</button>
+      </div>
+    </div>
+    <div class="featured-gallery">
+      <div class="gallery-item">
+        <img src="059f39d2-c5ce-4778-92e8-956eaef815c5.jpeg" alt="Admin Login Interface" />
+        <p class="image-caption">Admin Login Panel</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Capture d’écran 2025-05-22 232534.jpg" alt="User Management CRUD" />
+        <p class="image-caption">User Management Dashboard</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+      <p><a href="mailto:sofien.nefzi@esen.tn">sofien.nefzi@esen.tn</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img src="linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+      <p><a href="https://www.linkedin.com/in/sofien-nefzi-223651267/">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Interested in working together? <a href="#contact">Let’s talk</a>.</p>
+  <p>Copyright &#169; 2025 Sofyen Nefzi. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
