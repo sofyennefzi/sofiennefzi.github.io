@@ -22,18 +22,12 @@
 </nav>
 <nav id="hamburger-nav">
   <div class="logo">Sofyen Nefzi</div>
-  <div class="hamburger-menu">
-    <div class="hamburger-icon" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="menu-links">
-      <li><a href="#about" onclick="toggleMenu()">About</a></li>
-      <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
-      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-    </div>
+  <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+  <div class="menu-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
   </div>
 </nav>
 <section id="profile">
@@ -43,7 +37,7 @@
   <div class="section__text">
     <p class="section__text__p1">Hello, I'm</p>
     <h1 class="title">Sofyen Nefzi</h1>
-    <p class="section__text__p2">Full-Stack Developer | Spring Boot & Angular Specialist</p>
+    <p class="section__text__p2"> Full-Stack Developer</p>
     <div class="btn-container">
       <button class="btn btn-color-2" onclick="window.open('mon cv.pdf')">
         Download CV
@@ -583,6 +577,79 @@
       <div class="gallery-item">
         <img src="Capture d’écran 2025-05-22 232534.jpg" alt="User Management CRUD" />
         <p class="image-caption">User Management Dashboard</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Second Project: Online Book Recommendation Library -->
+<section id="book-library" class="featured-project">
+  <p class="section__text__p1">Explore In-Depth</p>
+  <h1 class="title">Featured Project: ESEN Digital Library System</h1>
+  <div class="featured-project-container">
+    <div class="featured-text">
+      <h2>📚 Full-Stack Library Management System (2025)</h2>
+      <p>
+        Developed a comprehensive digital library platform for ESEN featuring advanced book management,
+        dual-role authentication, and seamless borrowing processes.
+      </p>
+      <ul class="crud-features">
+        <li>Secure role-based authentication system</li>
+        <li>Complete book lifecycle management</li>
+        <li>Interactive book discovery interface</li>
+        <li>Automated loan tracking system</li>
+        <li>Real-time user administration</li>
+        <li>Cross-device responsive design</li>
+      </ul>
+      <div class="tech-stack">
+        <h3>Tech Stack:</h3>
+        <div class="tech-icons">
+          <span class="tech-icon">HTML5</span>
+          <span class="tech-icon">CSS3</span>
+          <span class="tech-icon">JavaScript</span>
+          <span class="tech-icon">PHP</span>
+          <span class="tech-icon">MySQL</span>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Live Demo</button>
+        <button class="btn btn-color-2 project-btn">Source Code</button>
+      </div>
+    </div>
+    <div class="featured-gallery">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="lib_esen/1.jpeg" alt="Digital Book Catalog Interface" />
+          <p class="image-caption">Interactive Book Catalog with Advanced Filtering</p>
+        </div>
+        <div class="gallery-item">
+          <img src="lib_esen/2.jpeg" alt="Book Management Dashboard" />
+          <p class="image-caption">Complete Book Management CRUD Interface</p>
+        </div>
+        <div class="gallery-item">
+          <img src="lib_esen/3.jpeg" alt="Library Information Section" />
+          <p class="image-caption">Modern Library Information Portal</p>
+        </div>
+        <div class="gallery-item">
+          <img src="lib_esen/4.jpeg" alt="User Authentication Interface" />
+          <p class="image-caption">Secure Multi-Role Login System</p>
+        </div>
+        <div class="gallery-item">
+          <img src="lib_esen/5.jpeg" alt="User Dashboard" />
+          <p class="image-caption">Personalized User Dashboard After Login</p>
+        </div>
+        <div class="gallery-item">
+          <img src="lib_esen/6.jpeg" alt="Book Loan Process" />
+          <p class="image-caption">Streamlined Book Loan Process</p>
+        </div>
+        <div class="gallery-item">
+          <img src="lib_esen/7.jpeg" alt="Book Purchase System" />
+          <p class="image-caption">Integrated Book Purchase Module</p>
+        </div>
+        <div class="gallery-item">
+          <img src="lib_esen/8.jpeg" alt="Administration Panel" />
+          <p class="image-caption">Comprehensive Administration Control Panel</p>
+        </div>
       </div>
     </div>
   </div>

@@ -47,57 +47,165 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+/* IMPROVED MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  /* Mobile Navigation Fixes */
+  #desktop-nav {
+    display: none !important;
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
+
+  #hamburger-nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
-  article {
+
+  .menu-toggle {
+    background-color: #29d9d5;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
     font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(41, 217, 213, 0.3);
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+
+  .menu-toggle:hover, .menu-toggle:active {
+    background-color: #1fb8b4;
+    transform: translateY(-1px);
   }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
+
+  .menu-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    padding: 1rem 0;
+    min-width: 220px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1001;
   }
-  .contact-info-container {
+
+  .menu-links.open {
+    display: block !important;
+    animation: slideDown 0.3s ease-out;
+  }
+
+  .menu-links li {
+    list-style: none;
     margin: 0;
   }
-  .contact-info-container p,
-  .nav-links li a {
+
+  .menu-links a {
+    display: block !important;
+    padding: 1rem 1.5rem;
+    color: #333 !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+  }
+
+  .menu-links a:hover, .menu-links a:active {
+    color: #29d9d5 !important;
+    background-color: rgba(41, 217, 213, 0.1);
+    border-left-color: #29d9d5;
+    padding-left: 2rem;
+  }
+
+  /* Sections adjustments for mobile */
+  section {
+    margin: 0 1rem;
+    padding-top: 5rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Further mobile optimizations */
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+  }
+
+  .section__pic-container {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 2rem;
+  }
+
+  .section__pic-container img,
+  .about-pic {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1rem;
     font-size: 1rem;
   }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
+
+  #socials-container {
     justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+
+  .icon {
+    width: 40px;
+    height: 40px;
   }
-  .title {
-    font-size: 2rem;
+
+  /* Menu improvements for very small screens */
+  .menu-links {
+    right: 0.5rem;
+    min-width: 200px;
   }
-  .text-container {
-    text-align: justify;
+
+  .menu-links a {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .menu-toggle {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
   }
 }

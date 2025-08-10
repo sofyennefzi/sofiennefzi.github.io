@@ -17,7 +17,17 @@ function scrollToContact() {
 // Keep your existing toggleMenu function
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
   menu.classList.toggle("open");
-  icon.classList.toggle("open");
 }
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+  const menu = document.querySelector(".menu-links");
+  const threeDots = document.querySelector(".three-dots");
+  const isClickInside = threeDots.contains(event.target);
+
+  if (!isClickInside && menu.classList.contains("open")) {
+    menu.classList.remove("open");
+    threeDots.classList.remove("active");
+  }
+});
