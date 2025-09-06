@@ -855,15 +855,15 @@ footer p {
     padding: 12px !important;
     border-radius: 8px;
     flex-direction: column;
-    gap: 4   align-items: center;
+    gap: 4px;
+    align-items: center;
     justify-content: center;
     z-index: 200;
     transition: transform 0.3s ease;
     background: rgba(41, 217, 213, 0.15) !important;
     min-width: 48px !important;
     min-height: 48px !important;
-    border: 2px solid transparent;px;
-
+    border: 2px solid transparent;
   }
 
   #hamburger-nav .three-dots:hover {
