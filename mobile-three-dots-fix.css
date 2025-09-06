@@ -1,0 +1,108 @@
+/* Mobile Three Dots Menu Fix */
+@media screen and (max-width: 768px) {
+  /* Force hamburger nav to show on mobile */
+  #desktop-nav {
+    display: none !important;
+  }
+
+  #hamburger-nav {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    padding: 0 1.25rem;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    z-index: 1000;
+  }
+
+  /* Ensure hamburger menu container is visible */
+  .hamburger-menu {
+    display: block !important;
+    position: relative;
+  }
+
+  /* Force three dots to show */
+  .three-dots {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    cursor: pointer;
+    padding: 0.8rem;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: center;
+    z-index: 200;
+    transition: transform 0.3s ease;
+    background: rgba(41, 217, 213, 0.1);
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  .three-dots:hover {
+    background: rgba(41, 217, 213, 0.2);
+  }
+
+  /* Make dots more visible */
+  .three-dots span {
+    width: 8px !important;
+    height: 8px !important;
+    background-color: #29d9d5 !important;
+    border-radius: 50%;
+    display: block !important;
+    transition: all 0.3s ease;
+  }
+
+  /* Menu dropdown styles */
+  .menu-links {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 0.5rem;
+    background: white;
+    padding: 1rem 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    min-width: 220px;
+    z-index: 1000;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .menu-links.open {
+    display: block !important;
+    animation: slideDown 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #hamburger-nav {
+    height: 58px;
+    padding: 0 .85rem;
+  }
+
+  .three-dots {
+    padding: 0.6rem;
+    min-width: 36px;
+    min-height: 36px;
+  }
+
+  .three-dots span {
+    width: 7px !important;
+    height: 7px !important;
+  }
+
+  .menu-links {
+    min-width: 200px;
+  }
+
+  .menu-links a {
+    font-size: 1rem;
+  }
+}
+

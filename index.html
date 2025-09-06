@@ -5,12 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sofyen Nefzi - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav id="desktop-nav">
-  <div class="logo">Sofyen Nefzi</div>
+  <a href="#" class="logo">
+    <i class="fas fa-code logo-icon"></i>
+    Sofyen Nefzi
+  </a>
   <div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -21,13 +23,22 @@
   </div>
 </nav>
 <nav id="hamburger-nav">
-  <div class="logo">Sofyen Nefzi</div>
-  <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
-  <div class="menu-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
+  <a href="#" class="logo">
+    <i class="fas fa-code logo-icon"></i>
+    Sofyen Nefzi
+  </a>
+  <div class="hamburger-menu">
+    <div class="three-dots" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
   </div>
 </nav>
 <section id="profile">
@@ -503,6 +514,74 @@
           </div>
         </div>
       </div>
+      <!-- Project 3 -->
+      <div class="details-container color-container project-card" data-category="fullstack">
+        <div class="article-container">
+          <img src="task.jpg" alt="Task Flow Application" class="project-img" />
+          <div class="project-overlay">
+            <h3>Task Flow</h3>
+            <p>Productivity Management Platform</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="experience-sub-title project-title">✅ Task Flow</h3>
+          <p class="project-description">
+            Full-stack productivity application with user authentication, project management,
+            and task tracking. Features a responsive dashboard with productivity insights,
+            priority-based task organization, and intuitive project categorization for
+            seamless workflow management.
+          </p>
+          <div class="tech-tags">
+            <span>Spring Boot</span>
+            <span>Angular</span>
+            <span>MySQL</span>
+            <span>JWT</span>
+            <span>TypeScript</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="details-container color-container project-card" data-category="automation">
+        <div class="article-container">
+          <img src="n8n.jpg" alt="Job Search Automation with n8n" class="project-img" />
+          <div class="project-overlay">
+            <h3>Job Search Automator</h3>
+            <p>AI-Powered Recruitment Assistant</p>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="experience-sub-title project-title">🤖 Job Search Automator</h3>
+          <p class="project-description">
+            Intelligent automation system that streamlines job hunting by scraping relevant positions,
+            analyzing job-description fit with AI, generating personalized cover letters, and organizing
+            opportunities in a centralized dashboard. Revolutionized my job search process with smart
+            automation and data-driven matching.
+          </p>
+          <div class="tech-tags">
+            <span>n8n</span>
+            <span>AI Integration</span>
+            <span>Web Scraping</span>
+            <span>Google Sheets API</span>
+            <span>Prompt Engineering</span>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">
+              GitHub
+            </button>
+            <button class="btn btn-color-2 project-btn">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
     </div> <!-- End Row 2 -->
   </div>
 </section>
@@ -649,6 +728,121 @@
         <div class="gallery-item">
           <img src="lib_esen/8.jpeg" alt="Administration Panel" />
           <p class="image-caption">Comprehensive Administration Control Panel</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- First Project: E-Commerce Analytics Dashboard -->
+<section id="ecommerce-analytics" class="featured-project">
+  <p class="section__text__p1">Explore In-Depth</p>
+  <h1 class="title">Featured Project: E-Commerce Analytics Dashboard</h1>
+  <div class="featured-project-container">
+    <div class="featured-text">
+      <h2>📊 Full-Stack E-Commerce Analytics Platform (2024)</h2>
+      <p>
+        Developed a comprehensive e-commerce analytics dashboard featuring real-time performance tracking,
+        customer behavior analysis, and campaign management for online businesses.
+      </p>
+      <ul class="crud-features">
+        <li>Real-time sales performance monitoring</li>
+        <li>Abandoned cart tracking and analysis</li>
+        <li>Customer acquisition cost (CAC) calculations</li>
+        <li>Product performance analytics</li>
+        <li>Advertising campaign ROI tracking</li>
+        <li>Customer segmentation and behavior analysis</li>
+      </ul>
+      <div class="tech-stack">
+        <h3>Tech Stack:</h3>
+        <div class="tech-icons">
+          <span class="tech-icon">Spring Boot</span>
+          <span class="tech-icon">Angular</span>
+          <span class="tech-icon">Oracle</span>
+          <span class="tech-icon">HTML5</span>
+          <span class="tech-icon">CSS3</span>
+          <span class="tech-icon">TypeScript</span>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Live Demo</button>
+        <button class="btn btn-color-2 project-btn">Source Code</button>
+      </div>
+    </div>
+    <div class="featured-gallery">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="main.jpg" alt="E-Commerce Dashboard Overview" />
+          <p class="image-caption">Main Dashboard with Performance Metrics</p>
+        </div>
+        <div class="gallery-item">
+          <img src="products.jpg" alt="Product Management Interface" />
+          <p class="image-caption">Product Performance Analytics</p>
+        </div>
+        <div class="gallery-item">
+          <img src="customer.jpg" alt="Customer Management Dashboard" />
+          <p class="image-caption">Customer Segmentation & Analysis</p>
+        </div>
+        <div class="gallery-item">
+          <img src="compagin.jpg" alt="Ad Campaign Management" />
+          <p class="image-caption">Advertising Campaign Performance Tracking</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- AI Agent Web Scraping Project -->
+<section id="ai-web-scraping" class="featured-project">
+  <p class="section__text__p1">Explore My Automation</p>
+  <h1 class="title">Featured Project: AI Agent Web Scraping</h1>
+  <div class="featured-project-container">
+    <div class="featured-text">
+      <h2>🤖 AI-Powered Web Scraping Agent (2025)</h2>
+      <p>
+        Developed an intelligent automation system that scrapes business data from multiple platforms
+        through natural language commands. The AI agent understands requests and automatically selects
+        the appropriate scraping tool for Google Maps, Yellow Pages, Apollo, and social media platforms.
+      </p>
+      <ul class="crud-features">
+        <li>Natural language processing for command interpretation</li>
+        <li>Multi-platform scraping (Google Maps, Yellow Pages, Apollo, Instagram, TikTok)</li>
+        <li>Automated data aggregation and cleaning</li>
+        <li>Real-time results delivered to Google Sheets</li>
+        <li>Intelligent tool selection based on query context</li>
+        <li>Apify integration for scalable web scraping</li>
+      </ul>
+      <div class="tech-stack">
+        <h3>Tech Stack:</h3>
+        <div class="tech-icons">
+          <span class="tech-icon">n8n</span>
+          <span class="tech-icon">OpenAI GPT-4</span>
+          <span class="tech-icon">Apify</span>
+          <span class="tech-icon">Google Sheets API</span>
+          <span class="tech-icon">JavaScript</span>
+          <span class="tech-icon">REST APIs</span>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn">Live Demo</button>
+        <button class="btn btn-color-2 project-btn">Workflow Details</button>
+      </div>
+    </div>
+    <div class="featured-gallery">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="n8n20%20(1).jpg" alt="n8n Workflow Interface" />
+          <p class="image-caption">Google Maps Integration in n8n</p>
+        </div>
+        <div class="gallery-item">
+          <img src="n8n21.jpg" alt="Google Maps Scraping Results" />
+          <p class="image-caption">The Main Project and The Execution</p>
+        </div>
+        <div class="gallery-item">
+          <img src="n8n22.jpg" alt="AI Chat Interface" />
+          <p class="image-caption">Google Sheet Result</p>
+        </div>
+        <div class="gallery-item">
+          <img src="n8n23.jpg" alt="Google Sheets Output" />
+          <p class="image-caption">Apify Scraping</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofyen Nefzi - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <style>
+    /* Additional Mobile Header Fixes */
+    .menu-toggle {
+      position: relative;
+      background: none !important;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-toggle::before,
+    .menu-toggle::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: #29d9d5;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .menu-toggle::before {
+      top: 25%;
+    }
+
+    .menu-toggle::after {
+      bottom: 25%;
+    }
+
+    .menu-toggle span {
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background-color: #29d9d5;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .menu-toggle.active::before {
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .menu-toggle.active::after {
+      bottom: auto;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .menu-toggle.active span {
+      opacity: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-toggle {
+        font-size: 0; /* Hide "Menu" text */
+        color: transparent;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav id="desktop-nav">
+  <div class="logo">Sofyen Nefzi</div>
+  <div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<nav id="hamburger-nav">
+  <div class="logo">Sofyen Nefzi</div>
+  <button class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    Menu
+  </button>
+  <ul class="menu-links">
+    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+  </ul>
+</nav>
+
+<script>
+// Ensure the mobile menu works properly
+document.addEventListener('DOMContentLoaded', function() {
+  // Make sure menu-links is properly structured
+  const menuLinks = document.querySelector('.menu-links');
+  if (menuLinks && !menuLinks.tagName === 'UL') {
+    // Convert div to ul if needed
+    const ul = document.createElement('ul');
+    ul.className = menuLinks.className;
+    ul.innerHTML = menuLinks.innerHTML;
+    menuLinks.parentNode.replaceChild(ul, menuLinks);
+  }
+});
+</script>
+
+<!-- Your existing content continues here... -->
