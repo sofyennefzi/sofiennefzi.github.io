@@ -224,6 +224,32 @@
   .title {
     font-size: 2.2rem;
   }
+
+  .about-pic {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 280px !important;
+    max-height: 280px !important;
+    min-width: 200px !important;
+    min-height: 200px !important;
+    object-fit: cover;
+    border-radius: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25) !important;
+    display: block !important;
+    margin: 0 auto;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background-color: white;
+  }
+
+  /* Enhanced container styling for mobile about section */
+  .section-container .section__pic-container {
+    width: 280px !important;
+    height: 280px !important;
+    border: 3px solid #29d9d5 !important;
+    background-color: white !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
+  }
 }
 
 /* Smaller mobile devices */
@@ -254,5 +280,112 @@
 
   #profile {
     padding-top: 5rem;
+  }
+}
+
+/* MOBILE RESPONSIVE DESIGN FOR ABOUT SECTION */
+@media screen and (max-width: 1024px) {
+  .about-main-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-profile-section {
+    order: 2;
+  }
+
+  .about-content-section {
+    order: 1;
+  }
+
+  .profile-stats {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 6rem 0 3rem 0;
+  }
+
+  .about-hero .title {
+    font-size: 2.8rem;
+  }
+
+  .about-main-container {
+    padding: 0 1rem;
+    gap: 2.5rem;
+  }
+
+  .profile-image-container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .profile-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .stat-item {
+    padding: 0.8rem 1.2rem;
+    min-width: 120px;
+  }
+
+  .about-intro {
+    padding: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .info-card {
+    padding: 1.5rem;
+  }
+
+  .skills-tags {
+    justify-content: center;
+  }
+
+  .arrow {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-hero .title {
+    font-size: 2.2rem;
+  }
+
+  .profile-image-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-intro,
+  .info-card,
+  .skills-preview {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+
+  .stat-item {
+    padding: 0.6rem 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .skill-tag {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 }
