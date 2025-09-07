@@ -490,7 +490,25 @@ section {
   flex-direction: column;
 }
 
-.article-container {
+/* Skills section reset: ensure original look */
+#experience .about-containers {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+#experience .details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: #ffffff;
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(163, 163, 163);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+#experience .article-container {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
@@ -499,16 +517,13 @@ section {
   justify-content: space-around;
 }
 
-article {
+#experience article {
   display: flex;
   width: 12rem;
   justify-content: space-around;
   gap: 0.5rem;
 }
 
-article .icon {
-  cursor: default;
-}
 
 /* SKILL BARS */
 .skill-bar {
